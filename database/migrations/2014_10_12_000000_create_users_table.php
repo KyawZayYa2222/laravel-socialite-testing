@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('password');
             $table->enum('auth_type', ['email', 'google']);
             $table->string('google_token')->nullable();
+            $table->string('github_token')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

@@ -25,8 +25,10 @@ Route::controller(App\Http\Controllers\Auth\GoogleLoginController::class)->group
     Route::get('/google/callback', 'handleGoogleCallback')->name('google-callback');
 });
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Github Login
+Route::controller(App\Http\Controllers\Auth\GithubLoginController::class)->group(function() {
+    Route::get('/github/redirect', 'redirectToGithub')->name('github-redirect');
+    Route::get('/github/callback', 'callbackToGithub')->name('github-callback');
+});
 
-// Route::get('/welcome', function() {
-//     return view('welcome');
-// });
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

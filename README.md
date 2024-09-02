@@ -17,10 +17,14 @@ ___
 - composer install or composer update
 - cp .env.example .env
 - setup your credentials (.env)
-  > #### Google Login
+  > #### Login with Google
   > - GOOGLE_CLIENT_ID = 
-  >  - GOOGLE_CLIENT_SECRET = 
-  >  - GOOGLE_REDIRECT_URL = 
+  > - GOOGLE_CLIENT_SECRET = 
+  > - GOOGLE_REDIRECT_URL = 
+  > #### Login with Github
+  > - GITHUB_CLIENT_ID = 
+  > - GITHUB_CLIENT_SECRET = 
+  > - GITHUB_REDIRECT_URL = 
 - php artisan migrate
 - php artisan serve
 - npm install

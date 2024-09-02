@@ -80,6 +80,14 @@
                                 <div class="col my-auto text-start">Continue with Google</div>
                             </div>
                         </a>
+                        <a href="{{route('github-redirect')}}" class="btn btn-light border w-50 mt-2">
+                            <div class="row">
+                                <div class="col col-3">
+                                    <img src="{{asset('img/github-logo.png')}}" width="40px" alt="">
+                                </div>
+                                <div class="col my-auto text-start">Continue with Github</div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
